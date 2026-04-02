@@ -9,8 +9,6 @@
         <module name="ava" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="26_326_avaa" target="25" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="25" />
   </component>
 </project>
