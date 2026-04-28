@@ -34,6 +34,15 @@ class Student extends Person
     {
         System.out.println(id+" "+score+" "+name+" "+age);
     }
+    private void setscore(double score)
+    {
+        this.score = score;
+    }
+    private double getscore()
+    {
+        return this.score;
+    }
+
 }
 
 class Monitor extends Student
@@ -44,11 +53,21 @@ class Monitor extends Student
     }
 
 }
-class teacher extends Person
+class Teacher extends Person
 {
 
-    public teacher(String name, int age) {
+    private int id;
+    public Teacher(String name, int age,int id)
+    {
+        this.id = id;
         super(name, age);
+    }
+    @Override
+    public void output()
+    {
+        //super调用
+        super.output();
+        System.out.println(id+" "+name+" "+age);
     }
 }
 //public类的类名必须与文件名一致。
@@ -56,6 +75,10 @@ public class Stu
 {
     public static void main(String[] args)
     {
-
+        Student a1=new Student("a1",1,1,99);
+        Student a2=new Student("a2",2,2,88);
+        Student a3=new Student("a3",3,3,77);
+        Teacher c1=new Teacher("c1",40,1);
+        
     }
 }
