@@ -2,6 +2,7 @@
 
 package hash;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -19,7 +20,7 @@ public class LC49_Group_Anagrams {
             map.computeIfAbsent(key, k -> new ArrayList<>()).add(str);
 
         }
-        for(String str)
+        for(String str:map.keySet())
         {
             System.out.println();
         }
